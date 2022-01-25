@@ -5,7 +5,7 @@
 # 文字列は「緯度/経度」の順で表記してください。
 
 def calculateLocation(latitude, longitude):
-    print(f"{nort_or_south(latitude)}{west_or_east(longitude)}")
+    return(f"{nort_or_south(latitude)}{west_or_east(longitude)}")
 
 def nort_or_south(latitude):
     if latitude == 0:
@@ -33,9 +33,9 @@ def west_or_east(longitude):
 
 # 出力のデータ型： string
 
-calculateLocation(77.147489,0) #--> north/prime meridian
-calculateLocation(-55.78774,0) #--> south/prime meridian
-calculateLocation(-36.615626,68.130625) #--> south/east
-calculateLocation(9.236204,-25.806614) #--> north/west
-calculateLocation(-29.998979,-19.74947) #--> south/west
-calculateLocation(0,0) #--> equator/prime meridian
+print(calculateLocation(77.147489,0)) #--> north/prime meridian
+print(calculateLocation(-55.78774,0)) #--> south/prime meridian
+print(calculateLocation(-36.615626,68.130625)) #--> south/east
+print(calculateLocation(9.236204,-25.806614)) #--> north/west
+print(calculateLocation(-29.998979,-19.74947)) #--> south/west
+print(calculateLocation(0,0)) #--> equator/prime meridian
