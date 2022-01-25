@@ -3,6 +3,10 @@ def upperCaseDomain(mail):
   return mail[domain:].upper()
 
 
+# メールアドレスが与えられるので、
+# メソッドチェーンを用いてドメイン名を大文字で切り出す 
+# upperCaseDomain という関数を作成してください。
+
 
 # 入力のデータ型： string email
 # 出力のデータ型： string
